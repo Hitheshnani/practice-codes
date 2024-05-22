@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .style{
+                margin-top: 20px;
+                padding-bottom: 20px;
+                height:200px;
+                column-gap: 20px;
+
+            }
+            .stylee{
+                display: grid;
+                grid-template-columns: 100px 50px 1fr;
+                column-gap:20px ;px
+                row-gap:20px;
+            }
+        </style>
+        <title> Grid practice</title>
+        <body>
+            <div style="display: grid; grid-template-columns: 100px 100px 100px ">
+                <div style="background-color:rgb(52, 118, 206)"> Div1 block</div>
+                <div style="background-color: rgb(101, 209, 209);"> Div2 block inside</div>
+                <div style="background-color: cadetblue;"> div3</div>
+            </div>
+            <div style="display: grid; grid-template-columns: 100px 100px 100px; padding-top: 10px;">
+                <div style="background-color: burlywood; padding-bottom: 20px;" > div11 </div>
+                <div style="background-color: cadetblue;"> div12</div>
+                <div style="background-color: chocolate;">div13</div>
+            </div>
+                <div style="display: grid; grid-template-columns:1fr 1fr 1fr" class="style">
+                    <div style="background-color: burlywood;">f1</div>
+                    <div style="background-color: aquamarine;">f2</div>
+                    <div style="background-color: brown;">f3</div>
+                </div>
+                <div class="stylee">
+                    <div style="background-color: chartreuse;"> fram1</div>
+                    <div style="background-color: crimson;">frame2</div>
+                    <div style="background-color: darkgoldenrod;">frame3</div>
+                </div>
+        </body>
+    </head>
+</html>
