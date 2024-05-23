@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flex{
+                display: flex;
+                flex-direction: row;
+                height:50px;
+                margin-bottom: 10px;
+            }
+            .column1{
+                background-color: lightpink;
+                width: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .item1{
+                background-color: black;
+                color:aliceblue
+            }
+            .column2{
+                background-color: lightblue;
+                width: 200px;
+            }
+            .flex2{
+                display: flex;
+                flex-direction: row;
+                width:300px;
+            }
+            .col1{
+                background-color: lightcoral;
+                width:100px;
+                height:50px;
+            }
+            .col2{
+            background-color: skyblue;
+            width:200px;
+            }
+            .nestedflex{
+                background-color: black;
+                display: flex;
+                flex-direction:row;
+                color:white;
+                width:35px;
+            }
+            .row2{
+                margin-left: 130px;
+                background-color: black;
+            }
+        </style>
+        <title> Nested flex box</title>
+        <body>
+            <div class="flex">
+                <div class="column1">
+                    <div class="item1">item1</div>
+                </div>
+                <div class="column2"></div>
+
+            </div>
+            <div class="flex2">
+                <div class="col1"></div>
+                <div class="col2">row1
+                    <div class="nestedflex">row2
+                        <div class="row2">row2</div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>
