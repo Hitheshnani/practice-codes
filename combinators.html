@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div >p{
+                color:red;
+            }
+            div ~p{
+                color:blueviolet
+            }
+            div +p{
+                color:burlywood
+            }
+
+        </style>
+        <title> combinators</title>
+        <body>
+            <h2> Descdent selector</h2>
+            <p> The descent selector matches all elements that are descents of a specified element</p>
+            <div>
+                <p> paragraph1 in div1</p>
+                <p> paragraph2 in div2</p>
+            </div>
+            <p>paragraph + </p>
+                <section>
+                    <p> paragraph 3 in div in section</p>
+                </section>
+            </div>
+            <p> paragraph 4 outer the div</p>
+            <p> paragraph 5 outer in div</p>
+        </body>
+    </head>
+</html>
